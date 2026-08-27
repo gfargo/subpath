@@ -40,8 +40,8 @@ working offline.
 ## What this repo is for
 
 This is the public tracker for Subpath. Use it to report bugs, request features, and ask questions.
-The application source is closed, so you will not find code here. Everything else about the product
-gets discussed in the open:
+The application lives in a separate, private repository, so you will not find code here. Everything
+else about the product gets discussed in the open:
 
 - **[Issues](../../issues)** for bugs and feature requests.
 - **[Discussions](../../discussions)** for questions, ideas that are not yet a concrete request, and

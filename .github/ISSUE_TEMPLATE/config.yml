@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or idea
+    url: https://github.com/gfargo/subpath/discussions
+    about: Ask how something works, or float an idea that is not yet a specific request.
+  - name: Security vulnerability
+    url: https://github.com/gfargo/subpath/blob/main/SECURITY.md
+    about: Report privately by email. Do not open a public issue.
+  - name: Account, billing, or privacy
+    url: mailto:support@subpath.dev
+    about: Anything involving your account details belongs in email, not a public issue.

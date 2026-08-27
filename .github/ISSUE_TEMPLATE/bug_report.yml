@@ -1,0 +1,81 @@
+name: Bug report
+description: Something in Subpath behaves incorrectly.
+labels: ["bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. Search the open issues first, and if your
+        problem is already filed, add a comment there instead of opening a new one.
+
+        Never paste API keys, passwords, or account tokens into an issue.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Describe the wrong behavior and what you expected instead.
+      placeholder: |
+        Rotating a text object with the handle also moved it off the baseline.
+        I expected it to rotate in place.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Number the steps from a fresh document, so I can follow them exactly.
+      placeholder: |
+        1. Open a new document
+        2. Add a text object with the text tool
+        3. Select it and drag the rotate handle
+        4. Watch the text drift
+    validations:
+      required: true
+
+  - type: input
+    id: share-link
+    attributes:
+      label: Share link
+      description: >
+        Optional, but it is the fastest path to a fix. Use Share in the editor to encode the
+        document into a URL and paste it here. Leave this blank if the artwork is private.
+      placeholder: https://subpath.dev/s/...
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Where does it happen
+      options:
+        - Browser at subpath.dev
+        - Desktop app on macOS
+        - Desktop app on Windows
+        - Both browser and desktop
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Browser or app version
+      description: For the browser, the name and version. For the desktop app, the version in About.
+      placeholder: Chrome 141 on macOS 15, or Subpath desktop 1.4.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: console
+    attributes:
+      label: Console errors
+      description: >
+        If you are in a browser, open developer tools, reproduce the bug, and paste any red errors.
+        Skip this if there are none.
+      render: text
+
+  - type: checkboxes
+    id: reproducible
+    attributes:
+      label: Does it happen again
+      options:
+        - label: I reproduced this after reloading the page or restarting the app.

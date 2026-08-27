@@ -1,0 +1,46 @@
+name: Feature request
+description: Suggest something Subpath should be able to do.
+labels: ["enhancement", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search first. If someone already asked for this, add your use case as a comment there. A
+        real workflow on an existing request moves it up; a duplicate does not.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to make
+      description: >
+        Describe the actual task and where Subpath stops you. The concrete version of a request
+        usually gets built, and the abstract version usually sits.
+      placeholder: |
+        I trace logos from client screenshots. After I place anchors I want to match one curve's
+        handle length to another so the two sides of a letterform stay symmetric. Today I eyeball it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like it to do
+      description: Optional. If you have a specific behavior or interaction in mind, describe it.
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: How do you handle it now
+      description: >
+        Another tool, a manual workaround, or giving up. This tells me how much the gap costs you.
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Where would you use it
+      options:
+        - Browser at subpath.dev
+        - Desktop app
+        - Both
+    validations:
+      required: true

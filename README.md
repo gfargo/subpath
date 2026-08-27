@@ -1,12 +1,41 @@
+<div align="center">
+
+<img src=".github/assets/logo.png" alt="" width="96" height="96">
+
 # Subpath
 
 **Shape every point.**
 
-Subpath is a local-first SVG path editor for the browser and desktop. You edit anchors and bezier
-handles directly, import existing artwork, and export to SVG, React, Vue, Svelte, CSS, data URIs,
-and sprite sheets. The full editor runs without an account and keeps working offline.
+A local-first SVG path editor for the browser and desktop.
+
+[![Version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsubpath.dev%2Fapi%2Fupdates&query=%24%5B0%5D.version&label=version&color=2563eb&style=flat-square)](https://subpath.dev/changelog)
+[![Open the editor](https://img.shields.io/badge/editor-subpath.dev-2563eb?style=flat-square)](https://subpath.dev)
+[![Platforms](https://img.shields.io/badge/platforms-web%20%7C%20macOS%20%7C%20Windows-555?style=flat-square)](https://subpath.dev/desktop)
+[![Open issues](https://img.shields.io/github/issues/gfargo/subpath?style=flat-square&color=555)](https://github.com/gfargo/subpath/issues)
+[![Discussions](https://img.shields.io/github/discussions/gfargo/subpath?style=flat-square&color=555)](https://github.com/gfargo/subpath/discussions)
 
 [Open the editor](https://subpath.dev) · [Desktop app](https://subpath.dev/desktop) · [Changelog](https://subpath.dev/changelog)
+
+</div>
+
+---
+
+You edit anchors and bezier handles directly, import existing artwork, and export to SVG, React,
+Vue, Svelte, CSS, data URIs, and sprite sheets. The full editor runs without an account and keeps
+working offline.
+
+## What Subpath does
+
+- **Edit paths directly.** Drag anchors and bezier handles, nudge to 0.1px, and snap to grids,
+  objects, and guides. Boolean operations combine shapes, and strokes convert to filled outlines.
+- **Import what you have.** Drop in an SVG or paste from Figma. Geometry, gradients, and clips come
+  across, and lossy conversions warn you instead of failing quietly.
+- **Export where you need it.** SVG, React, Vue, Svelte, CSS, data URIs, symbol sprites, and ZIP
+  bundles.
+- **Work offline.** Documents live in your browser or on your disk. No account, no upload, no
+  network required.
+- **Sync when you choose.** Cloud storage is opt-in per document and currently open to invited
+  accounts.
 
 ## What this repo is for
 
